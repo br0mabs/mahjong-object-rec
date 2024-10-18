@@ -40,7 +40,7 @@ Overall, I feel like with my current knowledge of computer science, I do have th
 
 ### Day 2 - Annotation Grind!
 
-After figuring out what we needed to do yesterday, today was spent grinding out image annotations! This was done on the website [Roboflow](https://roboflow.com/), which contains the YOLOv8 model that I would like to use. I picked up from the previous dataset I uploaded in the summer, and was able to get about 20 annotations done. The website has quite a clean UI and it was really easy to navigate and prepare the data.
+After figuring out what we needed to do yesterday, today was spent grinding out image annotations! This was done on the website [Roboflow](https://roboflow.com/), which contains the YOLOv8 model that I would like to use. I picked up from the previous dataset I uploaded in the summer, which consists of 646 images, and was able to get about 20 annotations done. Due to the ability for AI to generate annotations once enough have been manually labelled, I only have to label about 70 images manually before there should be enough accuracy to automatically label the rest. The website has quite a clean UI and it was really easy to navigate and prepare the data.
 
 <img src="/images/roboflowmainmenu.png" width="1000" alt="an overview of roboflow main menu" />
 
