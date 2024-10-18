@@ -40,6 +40,15 @@ Overall, I feel like with my current knowledge of computer science, I do have th
 
 ### Day 2 - Annotation Grind!
 
-After figuring out what we needed to do yesterday, today was spent grinding out image annotations! This was done on the website [Roboflow](https://roboflow.com/), which contains the YOLOv8 model that I would like to use. I picked up from the previous dataset I uploaded in the summer, and was able to get about 20 annotations done. The website has quite a clean UI and it was really easy to navigate and prepare the data:
+After figuring out what we needed to do yesterday, today was spent grinding out image annotations! This was done on the website [Roboflow](https://roboflow.com/), which contains the YOLOv8 model that I would like to use. I picked up from the previous dataset I uploaded in the summer, and was able to get about 20 annotations done. The website has quite a clean UI and it was really easy to navigate and prepare the data.
 
-<img src="/images/roboflowmainmenu.png" width="200" alt="an overview of roboflow main menu" />
+<img src="/images/roboflowmainmenu.png" width="1000" alt="an overview of roboflow main menu" />
+
+As for the actual annotations, we simply draw rectangular bounding boxes over the tiles in each image, as follows:
+
+<img src="/images/imageannotation.png" width="1000" alt="an overview of image annotation"/>
+
+
+I am looking to get some more picture samples of real life mahjong tiles, which I do have, but are back in Waterloo (I am home for reading week currently). These will help the model train on a wider variety of tiles compared to my current dataset, which will allow for better results in the long run.
+
+That's all for today, and probably for the next couple of days! I will update once again once all the image annotations are done :)
