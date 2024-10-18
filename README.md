@@ -37,3 +37,9 @@ Finally, part 3 of the project involves hosting the application by writing a fro
 After the project is completed, I will look into some CI/CD tools to ensure that this application stays running over time.
 
 Overall, I feel like with my current knowledge of computer science, I do have the tools to make this project a success. It is hard to gauge whether this project will take a couple weeks, or a couple of months. But regardless, I must now demonstrate that I have the motivation and the discipline to get it done.
+
+### Day 2 - Annotation Grind!
+
+After figuring out what we needed to do yesterday, today was spent grinding out image annotations! This was done on the website [Roboflow](https://roboflow.com/), which contains the YOLOv8 model that I would like to use. I picked up from the previous dataset I uploaded in the summer, and was able to get about 20 annotations done. The website has quite a clean UI and it was really easy to navigate and prepare the data:
+
+<img src="/images/roboflowmainmenu.png" width="200" alt="an overview of roboflow main menu" />
