@@ -66,9 +66,11 @@ The process for the actual model training involved exporting the dataset to goog
 Here are the results of the first model, which was trained on 198 images, 177 being training images, 13 validation, and 8 test images:
 
 Confusion matrix:
+
 <img src="/data/model info/v1/confusionmatrix.png" width="500" alt="confusion matrix for model v1"/>
 
 Loss graphs:
+
 <img src="/data/model info/v1/lossinfo.png" width="500" alt="loss function graphs"/>
 
 The key takeaways were that many tiles are still not getting detected, or are detected incorrectly or correctly with low confidence. This can cause a lot of overlap with detection, as one tile may be detected as possibly being many different tiles. This means more training is required, with more variety of training data, including different tile sizes, angles, perspectives, and occlusion. It seems like we do not need more than 100 or so of the original computer generated images, since they do not translate well into detection of tiles in real life photos. We will focus on including more real life images into the dataset.
