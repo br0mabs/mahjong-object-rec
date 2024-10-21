@@ -56,7 +56,9 @@ That's all for today, and probably for the next couple of days! I will update on
 ## Deploying Model v1
 
 Several days have passed since the last update, but a lot more annotation work has gone on in the background. I have manually annotated 50+ images, and also contributed some new images through online search of mahjong tiles as well as taking some pictures of my own tiles. This is to increase the complexity that the model will be able to support, such as different camera angles or different lighting conditions, as well as object obstruction that was not available in the initial dataset. Here is an example:
+
 <img src="/data/own_tiles/IMG_3098.jpeg" width="500" alt="an example of an image used for data"/>
+
 Note that there image is blurry, and there are obstructed tiles. This is all cleverly crafted in order to present the model with tough situations to train on.
 
 The process for the actual model training involved exporting the dataset to google colab, importing the YOLOv8 model, training using the freely provided T4 GPU, and then exporting the model and its results back to Roboflow. Fortunately, this process is already outlined in Roboflow's docs, and it was a matter of taking relevant code from [this tutorial](https://colab.research.google.com/github/roboflow/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb). I also learned that Roboflow allows for extra augmentation to the complete dataset during the export step, so I added some shear to the images so the model can train with different camera perspectives.
