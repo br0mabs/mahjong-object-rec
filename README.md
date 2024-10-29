@@ -76,3 +76,19 @@ Loss graphs:
 <img src="/data/model info/v1/lossinfo.png" width="500" alt="loss function graphs"/>
 
 The key takeaways were that many tiles are still not getting detected, or are detected incorrectly or correctly with low confidence. This can cause a lot of overlap with detection, as one tile may be detected as possibly being many different tiles. This means more training is required, with more variety of training data, including different tile sizes, angles, perspectives, and occlusion. It seems like we do not need more than 100 or so of the original computer generated images, since they do not translate well into detection of tiles in real life photos. We will focus on including more real life images into the dataset.
+
+## Deploying Model v2
+
+After a week of annotations, I was able to complete the second training set, which consisted of 100 CGI images, and the remaining 47 being real images of tiles, whether taken by myself or posted on the internet. I anticipated that the CGI images would not help much with the predictions of the real tiles, but I would soon be proven incorrect. I noticed that 25 epochs was not enough, as shown by the validation loss in the first model still trending downwards. I increased the number of epochs to 500. Additionally, I added some more modifications to the images, including noise, cropping, and hue change, which I decided were the most useful changes.
+
+After training the model, I noticed that Early Stopping kicked in around 150 epochs, stating that the best epoch was epoch 57, which meant that either the model learned quickly or that the dataset was still not strong enough. Here are the results of training (359 images, 318 train, 26 validation, 15 test):
+
+Confusion matrix:
+
+<img src="/data/model info/v2/confusionmatrix.png" width="500" alt="confusion matrix for model v1"/>
+
+Loss graphs:
+
+<img src="/data/model info/v2/lossinfo.png" width="500" alt="loss function graphs"/>
+
+This was actually a surprising improvement from the first model, with more much better predictions exhibited among the test set, which included real-world pictures. Additionally, the predictions were more confident and so less overlap exhibited where the model was unsure if one tile was tile A or tile B. My next goal is to augument the dataset further using real-world images only, up to 500+ images total, and run a final training run which should be sufficient to finish part 1 of this project.
