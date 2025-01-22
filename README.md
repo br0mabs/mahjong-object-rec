@@ -1,3 +1,5 @@
+# Development is currently paused while I try to find a job 🐒
+
 # Riichi Mahjong Hand Recognition Application
 
 The goal of this project is split into 3 parts:
